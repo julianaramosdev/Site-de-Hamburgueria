@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3E0"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Banner com a logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_hamburgueria"
+            android:contentDescription="Logo HamburgueriaZ"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🍔 FAÇA SEU PEDIDO 🍔"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"/>
+
+        <!-- Campo Nome -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 NOME DO CLIENTE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/editTextNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome completo"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_marginBottom="20dp"
+            android:textSize="16sp"/>
+
+        <!-- Seção Adicionais -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ ADICIONAIS"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxBacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🥓 Bacon (R$ 2,00)"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="#212121"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxQueijo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧀 Queijo (R$ 2,00)"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="#212121"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxOnionRings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🧅 Onion Rings (R$ 3,00)"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:textColor="#212121"/>
+        </LinearLayout>
+
+        <!-- Seletor de Quantidade -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔢 QUANTIDADE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/buttonMenos"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="−"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:backgroundTint="#FFA000"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewQuantidade"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#F5F5F5"
+                android:textColor="#D32F2F"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:id="@+id/buttonMais"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:backgroundTint="#D32F2F"/>
+        </LinearLayout>
+
+        <!-- Exibição do Preço -->
+        <TextView
+            android:id="@+id/textViewPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 0,00"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Resumo do Pedido -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 RESUMO DO PEDIDO"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewResumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="120dp"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:text="Seu pedido aparecerá aqui..."
+            android:textSize="14sp"
+            android:fontFamily="monospace"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Botão Enviar -->
+        <Button
+            android:id="@+id/buttonEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="📧 ENVIAR PEDIDO POR E-MAIL"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Botão Limpar (opcional) -->
+        <Button
+            android:id="@+id/buttonLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="🔄 Novo Pedido"
+            android:textSize="14sp"
+            android:backgroundTint="#9E9E9E"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

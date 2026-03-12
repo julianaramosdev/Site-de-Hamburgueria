@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HamburgueriaZ | O melhor hambúrguer artesanal da cidade</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="HamburgueriaZ - Hambúrgueres artesanais com ingredientes selecionados. Peça pelo nosso aplicativo Android e personalize seu pedido!">
+    <meta name="keywords" content="hamburgueria, delivery, lanche artesanal, bacon, queijo, onion rings, aplicativo de delivery">
+    <meta name="author" content="HamburgueriaZ">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph para compartilhamento em redes sociais -->
+    <meta property="og:title" content="HamburgueriaZ - O melhor hambúrguer da cidade">
+    <meta property="og:description" content="Peça pelo app e personalize seu hambúrguer com os melhores ingredientes!">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://www.hamburgueriaz.com.br">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>" type="image/svg+xml">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome 6 (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Library (Animações de scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER com navegação -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home">
+                    <i class="fas fa-hamburger"></i>
+                    <span>Hamburgueria<span class="highlight">Z</span></span>
+                </a>
+            </div>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                    <li><a href="#app" class="nav-link">Nosso App</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <a href="#app" class="btn btn-sm btn-primary">
+                    <i class="fas fa-download"></i> App
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <i class="fas fa-hamburger"></i>
+                <span>HamburgueriaZ</span>
+            </div>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul>
+            <li><a href="#home" class="mobile-link">Início</a></li>
+            <li><a href="#sobre" class="mobile-link">Sobre Nós</a></li>
+            <li><a href="#cardapio" class="mobile-link">Cardápio</a></li>
+            <li><a href="#app" class="mobile-link">Nosso App</a></li>
+            <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
+            <li><a href="#contato" class="mobile-link">Contato</a></li>
+        </ul>
+        <div class="mobile-menu-footer">
+            <a href="#app" class="btn btn-primary btn-block">
+                <i class="fas fa-android"></i> Baixar App
+            </a>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+        <!-- HERO SECTION - HOME -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                        <h1>O verdadeiro sabor do <span class="highlight">hambúrguer artesanal</span></h1>
+                        <p class="hero-description">Ingredientes frescos, selecionados e preparados com paixão. Faça seu pedido pelo nosso aplicativo e receba em casa com todo conforto e rapidez.</p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5000+</span>
+                                <span class="stat-label">Clientes satisfeitos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Tipos de hambúrguer</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Anos de tradição</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#app" class="btn btn-primary btn-large">
+                                <i class="fab fa-android"></i> Baixar App Grátis
+                            </a>
+                            <a href="#cardapio" class="btn btn-outline btn-large">
+                                Ver Cardápio <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Hambúrguer artesanal HamburgueriaZ"
+                                 loading="lazy">
+                            <div class="image-badge">
+                                <span><i class="fas fa-star"></i> Mais vendido</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- SOBRE NÓS -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Nossa história</span>
+                    <h2 class="section-title">Sobre a <span>HamburgueriaZ</span></h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="sobre-grid">
+                    <div class="sobre-content" data-aos="fade-right" data-aos-delay="100">
+                        <h3>Paixão por hambúrgueres desde 2014</h3>
+                        <p>A HamburgueriaZ nasceu do sonho de oferecer uma experiência gastronômica única, com hambúrgueres artesanais preparados com ingredientes de alta qualidade e muito carinho.</p>
+                        <p>Nossa missão é proporcionar momentos de prazer através de sabores autênticos, permitindo que cada cliente personalize seu pedido exatamente como deseja, através do nosso aplicativo exclusivo.</p>
+                        
+                        <div class="features-list">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Ingredientes Premium</h4>
+                                    <p>Selecionamos os melhores fornecedores para garantir qualidade em cada mordida.</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Delivery Rápido</h4>
+                                    <p>Entregamos em até 45 minutos, com embalagem térmica para manter a qualidade.</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>App Exclusivo</h4>
+                                    <p>Peça de forma prática e personalize cada detalhe do seu hambúrguer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sobre-image" data-aos="fade-left" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Equipe HamburgueriaZ"
+                             loading="lazy">
+                        <div class="experience-badge">
+                            <span class="years">10+</span>
+                            <span class="text">Anos de experiência</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARDÁPIO -->
+        <section id="cardapio" class="cardapio">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Sabores incríveis</span>
+                    <h2 class="section-title">Nosso <span>Cardápio</span></h2>
+                    <div class="divider"></div>
+                    <p class="section-description">Conheça nossos hambúrgueres artesanais ou crie sua própria combinação no aplicativo!</p>
+                </div>
+                
+                <!-- Filtros do cardápio -->
+                <div class="cardapio-filters" data-aos="fade-up" data-aos-delay="50">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="classicos">Clássicos</button>
+                    <button class="filter-btn" data-filter="especiais">Especiais</button>
+                    <button class="filter-btn" data-filter="vegetarianos">Vegetarianos</button>
+                </div>
+                
+                <div class="cardapio-grid" id="cardapioGrid">
+                    <!-- Card 1 - Clássico -->
+                    <div class="card" data-category="classicos" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Hambúrguer Clássico">
+                            <span class="card-tag">Mais pedido</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Hambúrguer Clássico</h3>
+                            <p>Pão brioche, hambúrguer 150g, alface, tomate, cebola roxa e molho especial da casa</p>
+                            <div class="card-footer">
+                                <span class="price">R$ 20,00</span>
+                                <button class="btn-card" onclick="window.location.href='#app'">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 - Bacon -->
+                    <div class="card" data-category="especiais" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card-image">
+                            <img src="images/Bacon_Burger.jpg" 
+                                 alt="Bacon Burger">
+                            <span class="card-tag">Especial</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Bacon Burger</h3>
+                            <p>Pão australiano, hambúrguer 150g, bacon crocante, cheddar e molho barbecue</p>
+                            <div class="card-footer">
+                                <span class="price">R$ 25,00</span>
+                                <button class="btn-card" onclick="window.location.href='#app'">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 - Onion Rings -->
+                    <div class="card" data-category="especiais" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Onion Rings Burger">
+                        </div>
+                        <div class="card-content">
+                            <h3>Onion Rings Burger</h3>
+                            <p>Pão brioche, hambúrguer 150g, onion rings crocantes, molho agridoce e rúcula</p>
+                            <div class="card-footer">
+                                <span class="price">R$ 27,00</span>
+                                <button class="btn-card" onclick="window.location.href='#app'">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4 - Veggie -->
+                    <div class="card" data-category="vegetarianos" data-aos="fade-up" data-aos-delay="250">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1525059696034-4967a8e1dca2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                                 alt="Veggie Burger">
+                            <span class="card-tag">Vegetariano</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Veggie Burger</h3>
+                            <p>Pão integral, hambúrguer de grão-de-bico, abobrinha, cenoura e molho de iogurte</p>
+                            <div class="card-footer">
+                                <span class="price">R$ 22,00</span>
+                                <button class="btn-card" onclick="window.location.href='#app'">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cardapio-cta" data-aos="fade-up">
+                    <p>Quer personalizar seu hambúrguer com ingredientes extras?</p>
+                    <a href="#app" class="btn btn-primary">
+                        <i class="fas fa-mobile-alt"></i> Use nosso aplicativo
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- APP SECTION - DEMONSTRAÇÃO -->
+        <section id="app" class="app-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Tecnologia e sabor</span>
+                    <h2 class="section-title">Conheça nosso <span>Aplicativo</span></h2>
+                    <div class="divider"></div>
+                    <p class="section-description">Desenvolvido em Java para Android, com interface intuitiva e personalizável</p>
+                </div>
+                
+                <div class="app-showcase">
+                    <div class="app-mockup" data-aos="fade-right">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="status-bar">
+                                    <span class="time">12:00</span>
+                                    <span class="battery"><i class="fas fa-battery-full"></i></span>
+                                </div>
+                                <div class="app-header-demo">
+                                    <span class="app-title">HamburgueriaZ</span>
+                                </div>
+                                <div class="app-content-demo">
+                                    <h4>FAÇA SEU PEDIDO</h4>
+                                    
+                                    <div class="demo-field">
+                                        <label>Nome</label>
+                                        <div class="demo-input">João Silva</div>
+                                    </div>
+                                    
+                                    <div class="demo-field">
+                                        <label>Adicionais</label>
+                                        <div class="demo-checkboxes">
+                                            <div class="demo-checkbox checked">🥓 Bacon</div>
+                                            <div class="demo-checkbox">🧀 Queijo</div>
+                                            <div class="demo-checkbox checked">🧅 Onion Rings</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo-field">
+                                        <label>Quantidade</label>
+                                        <div class="demo-quantity">
+                                            <span class="demo-qty-btn">−</span>
+                                            <span class="demo-qty-value">2</span>
+                                            <span class="demo-qty-btn">+</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="demo-price">
+                                        <span>Total:</span>
+                                        <strong>R$ 50,00</strong>
+                                    </div>
+                                    
+                                    <div class="demo-resumo">
+                                        <strong>Resumo:</strong>
+                                        <p>João Silva | Bacon: Sim | Onion Rings: Sim | Quantidade: 2 | Total: R$ 50,00</p>
+                                    </div>
+                                    
+                                    <div class="demo-button">
+                                        ENVIAR PEDIDO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="app-info" data-aos="fade-left">
+                        <h3>Peça diretamente do seu celular!</h3>
+                        
+                        <div class="app-features-grid">
+                            <div class="app-feature-card">
+                                <i class="fas fa-edit"></i>
+                                <h4>Personalização total</h4>
+                                <p>Escolha cada ingrediente do seu hambúrguer</p>
+                            </div>
+                            <div class="app-feature-card">
+                                <i class="fas fa-calculator"></i>
+                                <h4>Cálculo em tempo real</h4>
+                                <p>Veja o preço atualizado a cada escolha</p>
+                            </div>
+                            <div class="app-feature-card">
+                                <i class="fas fa-envelope"></i>
+                                <h4>Envio por e-mail</h4>
+                                <p>Receba a confirmação diretamente no seu email</p>
+                            </div>
+                            <div class="app-feature-card">
+                                <i class="fas fa-history"></i>
+                                <h4>Histórico de pedidos</h4>
+                                <p>Revise e repita pedidos anteriores</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-cta">
+                            <a href="#" class="btn-download">
+                                <i class="fab fa-android"></i>
+                                <div class="download-text">
+                                    <small>Disponível na</small>
+                                    <span>Google Play</span>
+                                </div>
+                            </a>
+                            
+                            <div class="qr-container">
+                                <p>Ou escaneie para baixar:</p>
+                                <div class="qr-code">
+                                    <i class="fas fa-qrcode"></i>
+                                    <span>Scan me</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEPOIMENTOS -->
+        <section id="depoimentos" class="depoimentos">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">O que dizem nossos clientes</span>
+                    <h2 class="section-title">Depoimentos <span>reais</span></h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="depoimentos-grid">
+                    <div class="depoimento-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="depoimento-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="depoimento-text">"O aplicativo é muito prático! Posso escolher exatamente o que quero no meu hambúrguer e o preço já calcula na hora. Recomendo demais!"</p>
+                        <div class="depoimento-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto de perfil">
+                            <div>
+                                <h4>Carlos Eduardo</h4>
+                                <span>Cliente desde 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="depoimento-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="depoimento-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="depoimento-text">"Melhor hambúrguer da região! O onion rings burger é sensacional. E o app facilita muito na hora de pedir, já salva meus dados e tudo."</p>
+                        <div class="depoimento-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Foto de perfil">
+                            <div>
+                                <h4>Ana Paula</h4>
+                                <span>Cliente desde 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="depoimento-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="depoimento-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="depoimento-text">"Atendimento excelente e entrega rápida. O app é intuitivo e nunca tive problemas. Parabéns pelo trabalho!"</p>
+                        <div class="depoimento-author">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Foto de perfil">
+                            <div>
+                                <h4>Roberto Alves</h4>
+                                <span>Cliente desde 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content" data-aos="fade-up">
+                    <h3>Receba ofertas exclusivas</h3>
+                    <p>Cadastre-se para receber promoções e novidades no seu e-mail</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Digite seu melhor e-mail" required>
+                        <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="contato">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-subtitle">Fale conosco</span>
+                    <h2 class="section-title">Entre em <span>contato</span></h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="contato-grid">
+                    <div class="contato-info" data-aos="fade-right">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Rua dos Hambúrgueres, 123 - Centro<br>São Paulo - SP, 01234-567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>(15) 9999-9999</p>
+                                <p>(15) 99999-9999 (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>contato@hamburgueriaz.com.br</p>
+                                <p>pedidos@hamburgueriaz.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horário de funcionamento</h4>
+                                <p>Terça a Domingo: 18h às 23h</p>
+                                <p>Segunda: Fechado</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contato-form" data-aos="fade-left">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="nome" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="assunto" placeholder="Assunto">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-hamburger"></i>
+                        <span>HamburgueriaZ</span>
+                    </div>
+                    <p>O melhor hambúrguer artesanal da cidade, direto do nosso aplicativo para a sua mesa.</p>
+                    <p>Atenção: Site desenvolvido como complemento ao aplicativo mobile da disciplina de Desenvolvimento Mobile do curso tecnólogo Análise e Desenvolvimento de Sistema.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#app">Aplicativo</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Política de Cookies</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Baixe o App</h4>
+                    <p>Disponível para Android</p>
+                    <a href="#" class="btn-download-small">
+                        <i class="fab fa-android"></i> Google Play
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 HamburgueriaZ. Todos os direitos reservados. | Desenvolvido para fins acadêmicos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+        
+        // Menu mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const overlay = document.getElementById('overlay');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        // Filtro do cardápio
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.card');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                
+                cards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
