@@ -71,7 +71,8 @@ Este projeto foi desenvolvido para fins acadêmicos na disciplina de Desenvolvim
 👨‍💻 Autor
 Seu Nome
 Juliana Ramos
-https://github.com/julianaramosdev
+Perfil GitHub: https://github.com/julianaramosdev
+Projeto: https://julianaramosdev.github.io/Site-de-Hamburgueria/
 
 📅 Data de entrega
 12 de março de 2026
@@ -80,5 +81,6 @@ https://github.com/julianaramosdev
 Este site é o complemento web do aplicativo mobile HamburgueriaZ, desenvolvido em Java no Android Studio.
 
 🔗 Ver repositório do App Mobile
+
 
 ⭐ Se este projeto te ajudou, considere dar uma estrela no GitHub! ⭐
